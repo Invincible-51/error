@@ -1,0 +1,7 @@
+Acne_or_Rosacea
+Atopic_Dermatitis
+Bullous_Disease
+Eczema
+Healthy_Skin
+Vascular_Tumors
+Vasculitis
