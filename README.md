@@ -5,6 +5,11 @@ Skin Condition Detection AI can help doctors to save time and energy by diagnosi
 ## The Algorithm
 skinDetection AI aims to simplify the diagnosis of skin conditions through image classification. It uses a retrained model of resnet-18 and also the imagenet.py program to classify our 2 classes of skin conditions ( Melanoma and Acne ) + Healthy Skin.
 
+An example of a Successfuly classified image (Melanoma): 
+
+<img width="200" alt="b_test" src="https://github.com/Invincible-51/Skin-Condition-Detector/assets/141347812/a930868e-d8dc-4a60-b3ae-3fabbf115e72">
+
+
 ## How to run the project:
 
 1. Ensure that you have a Jetson Nano.
