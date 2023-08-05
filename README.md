@@ -1,14 +1,23 @@
 ## Project: Skin Condition Detection AI
 
-Skin Condition Detection AI can help doctors to save time and energy by diagnosing the patients' skin condition for them, effectively minimizing the duration of doctor appointments and ensuring accuracy at the same time. This AI may also be used at home or anywhere in the world if a patient suspects they may have a skin condition, making healthcare diagnosis more accessible to everyone.
+Skin Condition Detection AI's main goal is to simplify the diagnosis of common skin conditions through the use of Artificial intelligence. In today's day and age, almost everything that normally needed to be completed in person can be done online. Since healthcare is limited and many people can't even afford to have a medical diagnosis, this AI will allow people to diagnose skin conditions from home or anywhere in the world, as long as they have access to the internet.
+
+Impacts: This AI can help notify a patient about possible skin conditions that they weren't aware of prior to the use of the AI, effectively helping to uncover any growing health problems or to prevent the transmission of contagious diseases.
 
 ## The Algorithm
 skinDetection AI aims to simplify the diagnosis of skin conditions through image classification. It uses a retrained model of resnet-18 and also the imagenet.py program to classify our 2 classes of skin conditions ( Melanoma and Acne ) + Healthy Skin.
 
-An example of a Successfuly classified image (Melanoma): 
+An example of a successfully classified image (Melanoma): 
 
 <img width="200" alt="b_test" src="https://github.com/Invincible-51/Skin-Condition-Detector/assets/141347812/a930868e-d8dc-4a60-b3ae-3fabbf115e72">
 
+
+
+Datasets (3): Melanoma, Acne, and Healthy Skin ( to prevent inaccurate diagnosis of actual skin conditions for people who don’t actually have any)
+
+Accuracy ( based on results after training 30 images of each test dataset ): Melanoma: 80% Accuracy.  Acne: 90% Accuracy.  Healthy Skin: 96.67% Accuracy
+
+Image Quantity: Train ( Avg for all 3 classifications ): 306.  Test ( all 3 classifications ): 30.  
 
 ## How to run the project:
 
@@ -44,7 +53,7 @@ An example of a Successfuly classified image (Melanoma):
 
   and "c_test" is for healthy skin.
 
-8. Use the scp command to look up the image in the host computer.
+8. Use the scp command ( as listed below ) to look up the image in the host computer.
 
    Windows:
 scp <nanousername>@192.168.55.1:/home/<nanousername>/jetson-inference/python/training/classification/cat.jpg C:\Users\<hostusername>\Desktop
