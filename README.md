@@ -34,11 +34,20 @@ skinDetection AI aims to simplify the diagnosis of skin conditions through image
 * Since there are 3 different test classification directories, you may replace the 'a_test/File_A1.jpg a_test.jpg' at the end of the command with 'c_test/File_C1.jpg c_test.jpg' and 'b_test/File_B1.jpg b_test.jpg' to choose images from a different test directory. To change the specific tested image, change the number AFTER the snippet 'File_A/B/C' with the numbers listed inside of the test classification directories. example: b_test/File_B4.jpg b_test.jpg
 
   "a_test" is for Acne,
+
   "b_test" is for Melanoma,
+
   and "c_test" is for healthy skin.
 
-8. View the output image.
-    
-9. (Optional) if you want to test your own image of a skin condition ( must be either Acne, Melanoma, or Healthy Skin ) add it to the test directory into any classification folder you like ( or put it in the correct one if you want to be organized ) and proceed to step 9.
+8. Use the scp command to look up the image in the host computer.
 
-If you are still confused, please watch this video: ( not yet added )
+   Windows:
+scp <nanousername>@192.168.55.1:/home/<nanousername>/jetson-inference/python/training/classification/cat.jpg C:\Users\<hostusername>\Desktop
+
+   Mac:
+scp <nanousername>@192.168.55.1:/home/<nanousername>/jetson-inference/python/training/classification/cat.jpg ./
+
+    
+10. (Optional) if you want to test your own image of a skin condition ( must be either Acne, Melanoma, or Healthy Skin ) add it to the test directory into any classification folder you like ( or put it in the correct one if you want to be organized ) and proceed to step 9.
+
+Project Video: https://youtu.be/cyXDj2gxPpM
