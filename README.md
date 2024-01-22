@@ -58,7 +58,7 @@ Image Quantity: Train ( Avg for all 3 classifications ): 306.  Test ( all 3 clas
    Windows:
 scp <nanousername>@192.168.55.1:/home/<nanousername>/jetson-inference/python/training/classification/cat.jpg C:\Users\<hostusername>\Desktop
 
-   Mac:
+   mac:
 scp <nanousername>@192.168.55.1:/home/<nanousername>/jetson-inference/python/training/classification/cat.jpg ./
 
     
